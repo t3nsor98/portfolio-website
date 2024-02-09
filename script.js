@@ -22,11 +22,11 @@ var typed = new Typed('#typed', {
 document.getElementById('dark-mode-toggle').addEventListener('click', function () {
   // Toggle dark mode class on body
   document.body.classList.toggle('dark-mode');
-
   // Toggle button text content between Dark Mode and Light Mode
   var darkModeToggleBtn = document.getElementById('dark-mode-toggle');
   if (darkModeToggleBtn.textContent === 'Dark Mode') {
     darkModeToggleBtn.textContent = 'Light Mode';
+
   } else {
     darkModeToggleBtn.textContent = 'Dark Mode';
   }
