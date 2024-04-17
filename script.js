@@ -10,6 +10,13 @@ function toggleMenu() {
 const hamBtn = document.getElementById("ham-btn");
 hamBtn.addEventListener("click", toggleMenu);
 
+// function to handle link li in mobile site
+const menuItems = document.querySelectorAll('.menu-links li');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', toggleMenu);
+});
+
 // Typed animation setup
 var typed = new Typed('#typed', {
   strings: ["a Frontend Developer.", "an Agriculture Graduate.", "a Technology Enthusiast.", "a Life Long Learner.", "a Problem Solver.", "a Gamer."],
