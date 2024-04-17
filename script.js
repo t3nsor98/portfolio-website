@@ -1,3 +1,5 @@
+// import Lenis from './node_modules/@studio-freight/lenis'
+
 //the hamburger menu fro small screen
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
@@ -34,16 +36,15 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function (
 
 
 // smooth scrolling GSAP
-const lenis = new lenis();
+const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
   console.log(e)
 })
 
-lenis.on('scroll', ScrollTrigger.update)
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
 
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000)
-})
-
-gsap.ticker.lagSmoothing(0)
+requestAnimationFrame(raf)
