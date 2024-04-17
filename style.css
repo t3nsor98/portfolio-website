@@ -201,11 +201,7 @@ section {
 }
 
 #socials-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  gap: 2rem;
+  margin: 1rem;
   height: 100px;
   padding: 1rem;
 }
@@ -218,6 +214,8 @@ section {
   transition-property: transform;
   transition-duration: 0.5s;
   padding-bottom: 5px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .icon:hover {
@@ -230,6 +228,7 @@ section {
 .btn-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -560,7 +559,6 @@ html.lenis {
 }
 
 @media screen and (max-width: 600px) {
-
   #contact,
   footer {
     height: 40vh;
