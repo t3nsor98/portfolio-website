@@ -34,7 +34,7 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function (
 
 
 // smooth scrolling GSAP
-const lenis = new Lenis();
+const lenis = new lenis();
 
 lenis.on('scroll', (e) => {
   console.log(e)
